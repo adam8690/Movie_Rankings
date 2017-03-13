@@ -5,4 +5,13 @@ package com.codeclan.moviesranking;
  */
 
 public class Ranking {
+    public Movie[] rankings;
+
+    public Ranking(){
+        this.rankings = rankings;
+    }
+
+    public void addMovie(Movie movie){
+        this.rankings[9] = movie;
+    }
 }

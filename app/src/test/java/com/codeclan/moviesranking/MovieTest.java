@@ -12,13 +12,30 @@ public class MovieTest {
 
     @Before
     public void before(){
-        movie1 = new Movie("Space Jam", "Factual");
+        movie1 = new Movie("Space Jam", "Factual", 1);
     }
 
     @Test
     public void testMovieHasTitle(){
         assertEquals("Space Jam", movie1.getTitle() );
     }
+
+    @Test
+    public void testMovieGenre(){
+        assertEquals("Factual", movie1.getGenre());
+    }
+
+    @Test
+    public void testRanking(){
+        assertEquals(1, movie1.getRanking());
+    }
+
+    @Test
+    public void testToStringOverride(){
+        assertEquals(movie.toString, "Not what to string does normally");
+    }
+
+
 
 }
 
