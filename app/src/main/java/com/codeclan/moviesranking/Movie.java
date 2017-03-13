@@ -43,7 +43,7 @@ public class Movie {
 
     @Override
     public String toString(){
-        return "Not what to string does normally";
+        return "Title: " + this.getTitle() + " Genre: " + this.getGenre() + " Rank: " + this.getRanking();
     }
 
 
