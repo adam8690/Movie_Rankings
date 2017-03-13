@@ -32,7 +32,7 @@ public class MovieTest {
 
     @Test
     public void testToStringOverride(){
-        assertEquals(movie.toString, "Not what to string does normally");
+        assertEquals(movie1.toString(), "Not what to string does normally");
     }
 
 
