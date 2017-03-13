@@ -22,5 +22,10 @@ public class RankingTest {
     rankings.addMovie(movie);
         assertEquals(movie, rankings.rankings[9]);
     }
+
+    @Test
+    public void testGetMovieByRanking(){
+        assertEquals(movie, rankings.getMovie(10));
+    }
 }
 
