@@ -1,7 +1,6 @@
 package com.codeclan.moviesranking;
-
-import org.junit.Before;
-import org.junit.Test;
+import static org.junit.Assert.*;
+import org.junit.*;
 
 /**
  * Created by Adam Baxter on 13/03/2017.
@@ -9,12 +8,16 @@ import org.junit.Test;
 
 public class MovieTest {
 
+    Movie movie1;
+
     @Before
-    Movie movie1 = new Movie("Space Jam", "Factual");
+    public void before(){
+        movie1 = new Movie("Space Jam", "Factual");
+    }
 
     @Test
     public void testMovieHasTitle(){
-        assertEquals("Space Jam", movie.getTitle());
+        assertEquals("Space Jam", movie1.getTitle() );
     }
 
 }
